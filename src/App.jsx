@@ -1,7 +1,12 @@
 import React from 'react'
+import Followers from './components/followers/Followers'
 
 function App () {
-  return <h1 className='flex justify-center items-center text-3xl'>OK!</h1>
+  return (
+    <main className='mx-7 my-12'>
+      <Followers />
+    </main>
+  )
 }
 
 export default App
