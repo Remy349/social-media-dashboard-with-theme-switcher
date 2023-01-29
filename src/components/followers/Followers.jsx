@@ -1,19 +1,23 @@
 import React from 'react'
 import FollowersCard from './FollowersCard'
-import { facebookIcon, upIcon } from '../../images/icons'
+import { followers } from '../../data/followersData'
 
 const Followers = () => {
   return (
-    <section>
-      <FollowersCard
-        username='@nathanf'
-        statsNum='1987'
-        text='Followers'
-        statsText='12 Today'
-        socialIcon={facebookIcon}
-        statsIcon={upIcon}
-        statsColor='green'
-      />
+    <section className='grid gap-y-7'>
+      {followers.map((follower) => (
+        <FollowersCard
+          key={follower.id}
+          socialName={follower.socialName}
+          username={follower.username}
+          statsNum={follower.statsNum}
+          text={follower.text}
+          statsText={follower.statsText}
+          socialIcon={follower.socialIcon}
+          statsIcon={follower.statsIcon}
+          statsColor={follower.statsColor}
+        />
+      ))}
     </section>
   )
 }

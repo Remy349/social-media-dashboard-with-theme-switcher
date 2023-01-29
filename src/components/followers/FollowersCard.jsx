@@ -1,6 +1,7 @@
 import React from 'react'
 
 const FollowersCard = ({
+  socialName,
   username,
   statsNum,
   text,
@@ -10,7 +11,10 @@ const FollowersCard = ({
   statsColor
 }) => {
   return (
-    <article className='card card-one shadow-md rounded-lg flex flex-col gap-y-7 items-center py-8'>
+    <article
+      className={`card card-${socialName} relative overflow-hidden
+        shadow-md rounded-lg flex flex-col gap-y-7 items-center py-8`}
+    >
       <div className='flex items-center gap-x-2'>
         <img className='w-6' src={socialIcon} alt='Icon facebook' />
         <p className='font-bold text-sm'>{username}</p>
@@ -25,7 +29,7 @@ const FollowersCard = ({
           className={
             statsColor === 'green'
               ? 'text-emerald-500 font-bold text-sm'
-              : 'text-red-500 font-bold text-sm'
+              : 'text-rose-500 font-bold text-sm'
           }
         >
           {statsText}
