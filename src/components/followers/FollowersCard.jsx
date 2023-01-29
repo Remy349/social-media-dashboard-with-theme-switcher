@@ -16,7 +16,7 @@ const FollowersCard = ({
         shadow-md rounded-lg flex flex-col gap-y-7 items-center py-8`}
     >
       <div className='flex items-center gap-x-2'>
-        <img className='w-6' src={socialIcon} alt='Icon facebook' />
+        <img className='w-6' src={socialIcon} alt='Icon social' />
         <p className='font-bold text-sm'>{username}</p>
       </div>
       <div>
@@ -24,7 +24,7 @@ const FollowersCard = ({
         <p className='card-text text-sm uppercase'>{text}</p>
       </div>
       <div className='flex items-center gap-x-2'>
-        <img className='w-4' src={statsIcon} alt='Icon up' />
+        <img className='w-4' src={statsIcon} alt='Icon stats' />
         <p
           className={
             statsColor === 'green'
