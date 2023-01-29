@@ -1,13 +1,17 @@
 import React from 'react'
 import Followers from './components/followers/Followers'
+import Header from './components/header/Header'
 import Overview from './components/overview/Overview'
 
 function App () {
   return (
-    <main className='grid gap-y-16 mx-7 mt-12 mb-16'>
-      <Followers />
-      <Overview />
-    </main>
+    <>
+      <Header />
+      <main className='grid gap-y-16 mx-6 mt-52 mb-16'>
+        <Followers />
+        <Overview />
+      </main>
+    </>
   )
 }
 

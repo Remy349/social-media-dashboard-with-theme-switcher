@@ -6,7 +6,7 @@
 
 :root {
   --card-bg-color: hsl(227, 47%, 96%);
-  --h3-text-color: hsl(230, 17%, 14%);
+  --dark-text-color: hsl(230, 17%, 14%);
 }
 
 * {
@@ -19,6 +19,68 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: hsl(0, 0%, 100%);
   color: hsl(228, 12%, 44%);
+}
+
+header {
+  background-color: hsl(0, 0%, 100%);
+}
+
+nav h1 {
+  color: var(--dark-text-color);
+}
+
+hr {
+  border-top-width: 1px;
+  border-color: var(--dark-text-color);
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: hsl(230, 22%, 74%);
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.slider:before {
+  background-color: hsl(0, 0%, 100%);
+  bottom: 4px;
+  content: "";
+  height: 22px;
+  left: 6px;
+  position: absolute;
+  transition: 0.4s;
+  width: 22px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .card {
@@ -63,7 +125,7 @@ body {
 }
 
 .card h3 {
-  color: var(--h3-text-color);
+  color: var(--dark-text-color);
 }
 
 .card-text {
@@ -75,5 +137,5 @@ body {
 }
 
 .stat h3 {
-  color: var(--h3-text-color);
+  color: var(--dark-text-color);
 }

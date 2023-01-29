@@ -1,4 +1,11 @@
-import { downIcon, facebookIcon, instagramIcon, twitterIcon, upIcon, youtubeIcon } from '../images/icons'
+import {
+  downIcon,
+  facebookIcon,
+  instagramIcon,
+  twitterIcon,
+  upIcon,
+  youtubeIcon
+} from '../images/icons'
 
 export const overview = [
   {
