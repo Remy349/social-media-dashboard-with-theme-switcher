@@ -7,7 +7,9 @@ function App () {
   return (
     <>
       <Header />
-      <main className='grid gap-y-16 mx-6 mt-52 mb-16'>
+      <main
+        className='grid gap-y-16 mx-6 mt-52 mb-16 lg:mt-36 xl:mx-auto'
+      >
         <Followers />
         <Overview />
       </main>

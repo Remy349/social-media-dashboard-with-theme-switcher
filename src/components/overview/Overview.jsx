@@ -8,7 +8,10 @@ const Overview = () => {
       <h2 className='font-bold mb-8 text-3xl dark:text-white-color'>
         Overview - Today
       </h2>
-      <div className='grid gap-y-6'>
+      <div
+        className='grid gap-y-6 sm:grid-cols-2 gap-x-6 lg:grid-cols-3
+        xl:grid-cols-4'
+      >
         {overview.map((overV) => (
           <OverviewStat
             key={overV.id}

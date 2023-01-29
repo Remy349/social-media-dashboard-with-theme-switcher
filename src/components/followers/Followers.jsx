@@ -4,7 +4,10 @@ import { followers } from '../../data/followersData'
 
 const Followers = () => {
   return (
-    <section className='grid gap-y-7'>
+    <section
+      className='grid gap-y-7 sm:grid-cols-2 sm:gap-x-7
+      lg:grid-cols-3 xl:grid-cols-4'
+    >
       {followers.map((follower) => (
         <FollowersCard
           key={follower.id}

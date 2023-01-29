@@ -139,3 +139,10 @@ input:checked + .slider {
 .stat h3 {
   color: var(--dark-text-color);
 }
+
+@media screen and (min-width: 1280px) {
+  nav,
+  main {
+    max-width: 1200px;
+  }
+}
