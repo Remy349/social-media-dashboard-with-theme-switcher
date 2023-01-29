@@ -22,15 +22,19 @@ const Header = () => {
   }, [darkMode])
 
   return (
-    <header className='fixed z-10 top-0 left-0 w-full'>
+    <header className='fixed z-10 top-0 left-0 w-full dark:bg-very-dark-blue'>
       <nav className='mx-6 flex justify-center flex-col h-48 gap-y-4'>
         <div>
-          <h1 className='font-bold text-2xl mb-2'>Social Media Dashboard</h1>
-          <p className='font-bold text-sm'>Total Followers: 23,004</p>
+          <h1 className='font-bold text-2xl mb-2 dark:text-white-color'>
+            Social Media Dashboard
+          </h1>
+          <p className='font-bold text-sm dark:text-desaturated-blue'>
+            Total Followers: 23,004
+          </p>
         </div>
-        <hr />
+        <hr className='dark:border-desaturated-blue' />
         <div className='flex justify-between items-center'>
-          <p className='font-bold'>Dark Mode</p>
+          <p className='font-bold dark:text-desaturated-blue'>Dark Mode</p>
           <label htmlFor='checkbox' className='toggle-theme'>
             <input
               type='checkbox'
